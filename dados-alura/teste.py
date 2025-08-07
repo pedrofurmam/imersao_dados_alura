@@ -175,6 +175,7 @@ plt.title("Boxplot dos salários anuais")
 plt.xlabel("Salário em USD")
 plt.show()
 """ 
+# Plotando boxplot dos salários anuais por nível de experiência
 """
 ordem_nivel_experiencia=['Junior','Pleno','Senior','Executivo']
 plt.figure(figsize=(8,5))
@@ -182,6 +183,7 @@ sns.boxplot( x='nivel_experiencia', y='usd', data=df_limpo,order=ordem_nivel_exp
 plt.title("Boxplot dos salários anuais por nível de experiência")
 plt.show()
 """
+# Plotly para visualização interativa
 """
 media_salario = df_limpo.groupby('nivel_experiencia')['usd'].mean().reset_index()
 
@@ -205,3 +207,4 @@ fig = px.pie(remoto_contagem,
 )
 fig.update_traces( textinfo='percent+label')  
 fig.show(renderer="browser")
+
