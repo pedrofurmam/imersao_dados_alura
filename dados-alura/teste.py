@@ -207,4 +207,4 @@ fig = px.pie(remoto_contagem,
 )
 fig.update_traces( textinfo='percent+label')  
 fig.show(renderer="browser")
-
+print('teste')
